@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    <!-- The form starts here -->
+    <form action="/submit_page" method="POST">
+        <!-- The 'action' attribute defines where to send the form data (URL address) -->
+        <!-- The 'method' attribute defines the HTTP method (POST or GET) -->
+
+        <div>
+            <label for="name">Name:</label>
+            <!-- Input field for the user's name -->
+            <input type="text" id="name" name="user_name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mail">Email:</label>
+            <!-- Input field for the user's email address -->
+            <input type="email" id="mail" name="user_email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <!-- A button to submit the form -->
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <!-- The form ends here -->
+
+</body>
+</html>
+
